@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="left">
+        <!-- slider -->
+
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="resume-template/1.svg" />
+            <div class="text">BASIC TEMPLATE</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="resume-template/2.svg" />
+            <div class="text">PORTRAIT PIC TEMPLATE</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="resume-template/3.svg" />
+            <div class="text">BASIC TEMPLATE</div>
+          </div>
+          <div class="mySlides fade">
+            <img src="resume-template/4.svg" />
+            <div class="text">PORTRAIT PIC TEMPLATE</div>
+          </div>
+          <div class="mySlides fade">
+            <img src="resume-template/5.svg" />
+            <div class="text">PORTRAIT PIC TEMPLATE</div>
+          </div>
+          <div class="mySlides fade">
+            <img src="resume-template/6.svg" />
+            <div class="text">PORTRAIT PIC TEMPLATE</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+      </div>
+      <div class="right">
+        <div class="form-container">
+          <h1>Create an account</h1>
+          <p>
+            Already have an account?&nbsp;
+            <span><a href="#">Log in</a></span>
+          </p>
+          <!-- inputs -->
+          <div class="input-f-l">
+            <input type="text" name="" id="" placeholder="First name" />
+            <input type="text" name="" id="" placeholder="Last name" />
+          </div>
+          <div class="input-e-p">
+            <input type="email" name="" id="" placeholder="Email" />
+            <input
+              type="password"
+              name=""
+              id=""
+              placeholder="Enter your password"
+            />
+            <div class="terms-condition">
+              <input type="checkbox" name="" id="checkbox" />
+              <p>I agree to the <a href="#">Terms & Conditions</a></p>
+            </div>
+            <div class="create-ac">
+              <button value="Create account">Create account</button>
+            </div>
+            <div class="or-reg-with">
+              <hr />
+              <span>Or register with</span>
+              <hr />
+            </div>
+            <div class="GA">
+              <button type="button">
+                <img src="resume-template/google.svg" alt="" /> Google
+              </button>
+              <button type="button">
+                <img src="resume-template/apple.svg" alt="" /> Apple
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
