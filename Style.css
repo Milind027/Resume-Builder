@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 html,
@@ -10,6 +11,102 @@ body {
     width: 100%;
 }
 
-html {
-    scroll-behavior: smooth;
+:root {
+    --bg-color: #ffffff;
+    --heading-text: #020101;
+    --btn-bg: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: #000000;
+}
+
+header {
+    padding: 20px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_center ul {
+    display: flex;
+    gap: 25px;
+}
+
+.nav_center ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav_center ul li {
+    list-style-type: none;
+}
+
+.nav_right button {
+    width: 250px;
+    height: 60px;
+     background-color: var(--btn-bg);
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 1px solid #000000a9;
+
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.section-left {
+    /* background-color: rebeccapurple; */
+    width: 35%;
+    height: 50vh;
+}
+
+.section-left h1 {
+    font-size: 4rem;
+    color: var(--heading-text);
+}
+
+.section-left p {
+    margin: 20px 0;
+    color: #000000cc;
+
+}
+
+.section-right img {
+    width: 100%;
+    height: 80vh;
+
+}
+
+.btn {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn button {
+    width: 300px;
+    height: 80px;
+    border: none;
+    border-radius: 3px;
+    color: #000000;
+}
+
+.btn button:nth-child(2) {
+    background-color: var(--btn-bg);
+    color: #000000;
+    border: none;
+    border-bottom: 1px solid #000000a9;
 }
