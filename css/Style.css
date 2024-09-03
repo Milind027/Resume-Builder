@@ -33,16 +33,12 @@ body {
     max-width: 60vw;
     max-height: 100vh;
     width: 100%;
-    /*  */
 
-    /* background: url(/assets/resume-template/container-bg.svg); */
-    /* background: rgba(255, 255, 255, 0.1); */
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(2.5px);
     -webkit-backdrop-filter: blur(2.5px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    /* opacity: .1; */
 }
 
 .left-side {
@@ -56,14 +52,12 @@ body {
 
 .left-side h1 {
     margin-bottom: 20px;
-    /* color: #737373; */
     color: #e2dddd;
 
 }
 
 .left-side p {
     margin-bottom: 30px;
-    /* color: #737373; */
     color: #e2dddd;
 }
 
@@ -78,12 +72,8 @@ body {
 .left-side button {
     padding: 10px 20px;
     border: none;
-    /* background-image: linear-gradient(135deg, #939a9f 10%, #81b5d7 100%); */
 
-    /* background-image: linear-gradient(135deg, #ABDCFF 20%, #0396FF 10%); */
 
-    /* background-color: rgba(31, 38, 135, 0.925); */
-    /* color: #f7f4f4; */
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
@@ -102,9 +92,7 @@ body {
     height: auto;
 }
 
-/* get_btn */
 
-/* button animation */
 .get_btn button {
     display: inline-block;
     transition: all 0.2s ease-in;

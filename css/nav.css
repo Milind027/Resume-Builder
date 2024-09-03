@@ -38,12 +38,10 @@
 }
 
 .nav-links a:hover {
-    /* color: rgba(62, 70, 172, 0.703); */
     color: #6E54B5;
 }
 
 .build-resume {
-    /* margin-left: auto; */
     padding: 5px 15px;
 
 
