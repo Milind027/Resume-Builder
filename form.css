@@ -1,0 +1,172 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(79, 194, 237);
+}
+
+.container {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.container header {
+    position: relative;
+    text-align: center;
+    font-size: 29px;
+    font-weight: 600;
+    color: white;
+}
+
+.container form {
+    position: relative;
+    min-height: px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin-top: 16px;
+    padding: 8px;
+    justify-content: left;
+    border-radius: 6px;
+}
+
+.container form .details {
+    margin-top: 10px;
+}
+
+.title {
+    background-color: deepskyblue;
+    font-size: 24px; /* Increase the font size */
+    font-weight: 700; /* Make the text bold */
+    text-align: center;
+    color: #333; /* Darker color for contrast */
+    margin-bottom: 50px; /* Add more space below the title */
+    background-color: #5143c0; /* Change this to any color you prefer */
+    color: white;              /* Text color */
+    padding: 10px 20px;        /* Padding around the text */
+    border-radius: 5px;        /* Rounded corners */
+    font-size: 1.2rem;         /* Font size */
+    display: flex;     /* Ensure background doesn't stretch full width */
+    margin-bottom: 10px;       /* Space below the title */
+    justify-content: center;
+}
+
+
+.feilds {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+    gap: 20px; /* Space between columns */
+    width: 100%;
+}
+
+/* Form group styling */
+.input-feilds {
+    flex: 1; /* Flex-grow: take up available space */
+    min-width: 250px; /* Minimum width for each input field */
+    display: flex; /* Flexbox for arranging label and input */
+    flex-direction: column; /* Stack label and input vertically */
+    margin-bottom: 15px; /* Space below each input field */
+}
+
+
+/* Label and input styling */
+label {
+    
+    margin-bottom: 5px;
+    text-align: left; /* Left-align the label */
+   
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="file"],
+input[type="submit"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Ensure the file input and submit button are inside the same box */
+.image-submit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Submit button style */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+/* buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Space between the two buttons */
+    margin-top: 20px; /* Adds space above the buttons */
+}
+
+.remove-btn {
+    margin-left: auto; /* Push the remove button to the right */
+    background-color: #f44336; /* Optional: red background */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Adds some padding for better look */
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.remove-btn:hover{
+    background-color: #b8655f;
+}
+
+.add-btn {
+    background-color: #4CAF50; /* Optional: green background */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Adds some padding for better look */
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.add-btn:hover{
+    background-color: #1a5b62;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feilds {
+        grid-template-columns: 1fr; /* Stack all fields vertically on smaller screens */
+    }
+
+    .input-feilds {
+        flex-direction: column; /* Stack inputs vertically on small screens */
+    }
+}
+/* Center the submit button */
+.form .details .feilds {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    align-items: center;     /* Centers the button vertically (optional if needed) */
+    margin-top: 20px;
+    
+}
+.add-btn{
+    border-radius: 6px;
+}
+
+
