@@ -1,0 +1,442 @@
+/* Import Google Fonts */
+@import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+/* Reset default styles and set font family */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Set up the body background and layout */
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Style the main container */
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+/* Style the left side of the CV */
+.container .left-side{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+
+
+/* Style the profile text section */
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Style the profile image */
+.profileText .imgBox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBox .img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    right: 100%;
+    object-fit: cover;
+}
+
+/* Style the name and job title */
+.profileText h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+/* Style the contact info section */
+.contactInfo
+{
+    padding-top: 40px;
+}
+
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul{
+    position: relative;
+}
+
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.container ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+
+/* Style the education section */
+.contactInfo.education li{
+    margin-bottom: 15px;
+}
+
+.contactInfo.education h5{
+    color: #03a9f4;
+}
+
+.contactInfo.education h4:nth-child(2){
+    color: #fff;
+    font-weight: 500;   
+}
+
+.contactInfo.education h4{
+    color: #fff;
+    font-weight: 300;
+}
+
+/* Style the language section */
+.contactInfo.Languages .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgb(4, 7, 24);
+    display: block;
+    margin: 5px;
+}
+
+.contactInfo.Languages .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+/* Style the right side of the CV */
+.container .right-side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+/* Style the about section */
+.about{
+    margin-bottom: 50px;
+}
+
+.about:last-child{
+    margin-bottom: 0;
+}
+
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p{
+   color: #333; 
+}
+
+/* Style the experience section */
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_company{
+    min-width: 150px;
+}
+
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+/* Style the skills section */
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box4 h4{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 500;
+}
+
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #003147;
+}
+
+/* Style the interests section */
+.interest ul li{
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+/* Styles for the action buttons */
+.action-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.action-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.action-buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for editable content */
+[contenteditable="true"]:focus {
+    outline: 2px solid #007bff;
+    padding: 2px;
+}
+
+/* Styles for action buttons at the bottom */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.action-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+.action-buttons button:hover {
+    opacity: 0.8;
+}
+
+/* navigation buttons */
+.navbtn
+{
+position: fixed;
+top: 40%;
+left: 4%;
+transform: translate(-40%,-4%);
+height: 60px;
+width: 60px;
+border-radius: 50%;
+border:#fff 2px solid;
+transition: 300ms ease-in-out;
+box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.navbtn:nth-child(2)
+{
+top: 50%;
+left: 4.4%;
+transform: translate(-50%,-4.4%);
+}
+.navbtn:nth-child(3)
+{
+top: 60%;
+left: 4.8%;
+transform: translate(-60%,-4.8%);
+}
+.navbtn:hover
+{
+    background-color: black;
+    color: #fff;
+    border: #000 2px solid;
+    height: 65px;
+    width: 65px;
+}
+
+@media print {
+    .container {
+        width: 210mm;
+        height: 297mm;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container .left-side,
+    .container .right-side {
+        padding: 2mm;
+    }
+
+    body {
+        background: none;
+    }
+
+    .navbtn {
+        display: none !important;
+    }
+}
+
+/* Add or update these rules at the end of your try3.css file */
+
+.generating-pdf {
+    width: 710mm;
+    height: 760mm;
+    overflow: inherit;
+}
+
+.generating-pdf .container {
+    width: 710mm;
+    height: 760mm;
+    padding: 10mm;
+    margin: 0;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    font-size: 9pt;
+}
+
+.generating-pdf .container .left-side {
+    width: 100%;
+    padding: 5mm;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.generating-pdf .container .right-side {
+    width: 200%;
+    padding: 5mm;
+    box-sizing: border-box;
+    margin-left: 10px;
+    text-align:justify;
+}
+
+.generating-pdf .profileText .imgBox {
+    width: 100px;
+    height: 120px;
+}
+
+.generating-pdf .title {
+    font-size: 30pt;
+    margin-bottom: 5mm;
+}
+
+.generating-pdf .contactInfo ul li,
+.generating-pdf .contactInfo.education li {
+    font-size: 22pt;
+    margin: 2mm 0;
+}
+
+.generating-pdf .title2 {
+    margin-top: 10pt;
+    font-size: 35pt;
+    margin-bottom: 3mm;
+}
+
+.generating-pdf .about .box {
+    margin: 5mm 0;
+}
+
+.generating-pdf .about .box .year_company h5,
+.generating-pdf .about .box .text h4,
+.generating-pdf p {
+    font-size: 20pt;
+}
+
+.generating-pdf .skills .box {
+    margin-bottom: 3mm;
+}
+
+.generating-pdf .skills .box h4 {
+    font-size: 20pt;
+}
+
+.generating-pdf .interest ul li {
+    font-size: 20pt;
+    margin: 2mm 0;
+}
+
+.generating-pdf .navbtn,
+.generating-pdf #downloadBtn {
+    display: none !important;
+}
