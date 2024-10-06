@@ -16,11 +16,18 @@ function printpdf() {
   allInputCheckboxes.forEach(input => {
       input.classList.remove("none");
   })
+<<<<<<< HEAD
 
     html2pdf(content, {
         html2canvas: { scale: 0.8, logging: true, dpi: 500 }
     });
 
+=======
+  
+    html2pdf(content, {
+        html2canvas: { scale: 1, logging: true, dpi: 500 }
+    });
+>>>>>>> f93a6c824187dc5ed8a9295e519963fcafb45a06
   }
   
   function addedu() {
