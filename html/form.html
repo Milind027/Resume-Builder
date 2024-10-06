@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<body>
+    <div class="container">
+        <header>Registration</header>
+        <form action="#" method="post">
+            <div class="form first">
+                <div class="details">
+                    <span class="title">About Section</span>
+                    <div class="feilds">
+                        <div class="input-feilds">
+                            <label for="">First Name</label>
+                            <input type="text" placeholder="i.e jhon" required>
+                            <label for="">Your Image</label>
+                            <input type="file" id="myFile" name="filename">
+                            <label for="">E-mail</label>
+                            <input type="email" placeholder="i.e. ramesh123@gmail.com" required>
+                           
+                        </div>
+                        <div class="input-feilds">
+                            <label for="">Middle Name(optional)</label>
+                            <input type="text" placeholder="i.e ramesh">
+                            <label for="">Designation</label>
+                            <input type="text" placeholder="Senior Manager" required>
+                            <label for="">Phone Number</label>
+                            <input type="number" required>
+                            
+                        </div>
+                        <div class="input-feilds">
+                            <label for="">Last Name</label>
+                            <input type="text" placeholder="rathva" required>
+                            <label for="">Address</label>
+                            <input type="text" placeholder="#" required>
+                            
+                            <label for="">Summary</label>
+                            <input type="text" placeholder="write about you">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements Section -->
+            <div class="form first">
+                <div class="details">
+                    <span class="title">Achievements</span>
+                    <div id="achievements-container">
+                        <!-- Original Achievements Section -->
+                        <div class="achievement-item" data-original="true">
+                            <div class="feilds">
+                                <div class="input-feilds">
+                                    <label for="">Title</label>
+                                    <input type="text" placeholder="HR" required>
+                                </div>
+                                <div class="input-feilds">
+                                    <label>Description</label>
+                                    <input type="text" placeholder="HR">
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button type="button" class="add-btn" onclick="addAchievement()">Add Achievement</button>
+                                <button type="button" class="remove-btn" onclick="removeSection(this)" disabled>Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experiences Section -->
+            <div class="form first">
+                <div class="details">
+                    <span class="title">Experiences</span>
+                    <div id="experience-container">
+                        <!-- Original Experience Section -->
+                        <div class="experience-item" data-original="true">
+                            <div class="feilds">
+                                <div class="input-feilds">
+                                    <label for="">Title</label>
+                                    <input type="text" placeholder="#" required>
+                                    <label for="">Start Date</label>
+                                    <input type="date" placeholder="mm/dd/yyyy" required>
+                                </div>
+                                <div class="input-feilds">
+                                    <label for="">Company/Organization</label>
+                                    <input type="text" placeholder="Company">
+                                    <label for="">End Date</label>
+                                    <input type="date" placeholder="mm/dd/yyyy" required>
+                                </div>
+                                <div class="input-feilds">
+                                    <label for="">Location</label>
+                                    <input type="text" placeholder="Location" required>
+                                    <label for="">Description</label>
+                                    <input type="text" placeholder="Description" required>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button type="button" class="add-btn" onclick="addExperience()">Add Experience</button>
+                                <button type="button" class="remove-btn" onclick="removeSection(this)" disabled>Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="form first">
+                <div class="details">
+                    <span class="title">Education</span>
+                    <div id="education-container">
+                        <!-- Original Education Section -->
+                        <div class="education-item" data-original="true">
+                            <div class="feilds">
+                                <div class="input-feilds">
+                                    <label for="">School</label>
+                                    <input type="text" placeholder="#" required>
+                                    <label for="">Start Date</label>
+                                    <input type="date" placeholder="mm/dd/yyyy" required>
+                                </div>
+                                <div class="input-feilds">
+                                    <label for="">Degree</label>
+                                    <input type="text" placeholder="Degree">
+                                    <label for="">End Date</label>
+                                    <input type="date" placeholder="mm/dd/yyyy" required>
+                                </div>
+                                <div class="input-feilds">
+                                    <label for="">City</label>
+                                    <input type="text" placeholder="City" required>
+                                    <label for="">Description</label>
+                                    <input type="text" placeholder="Description" required>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button type="button" class="add-btn" onclick="addEducation()">Add Education</button>
+                                <button type="button" class="remove-btn" onclick="removeSection(this)" disabled>Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="form first">
+                <div class="details">
+                    <span class="title">Projects</span>
+                    <div id="projects-container">
+                        <!-- Original Projects Section -->
+                        <div class="project-item" data-original="true">
+                            <div class="feilds">
+                                <div class="input-feilds">
+                                    <label for="">Project Name</label>
+                                    <input type="text" placeholder="Project Name" required>
+                                </div>
+                                <div class="input-feilds">
+                                    <label for="">Project Link</label>
+                                    <input type="text" placeholder="Project Link">
+                                </div>
+                                <div class="input-feilds">
+                                    <label for="">Description</label>
+                                    <input type="text" placeholder="Description" required>
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button type="button" class="add-btn" onclick="addProject()">Add Project</button>
+                                <button type="button" class="remove-btn" onclick="removeSection(this)" disabled>Remove</button>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Button Section -->
+            <div class="form first">
+                <div class="details">
+                  
+                    <div class="feilds">
+                        <div class="input-feilds">
+                            <button type="submit" class="add-btn">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div> 
+
+    <script>
+        // Function to clone and add an achievement section
+        function addAchievement() {
+            const container = document.getElementById('achievements-container');
+            const template = container.querySelector('.achievement-item').cloneNode(true);
+            template.removeAttribute('data-original');
+            template.querySelector('.remove-btn').disabled = false;
+            container.appendChild(template);
+        }
+
+        // Function to clone and add an experience section
+        function addExperience() {
+            const container = document.getElementById('experience-container');
+            const template = container.querySelector('.experience-item').cloneNode(true);
+            template.removeAttribute('data-original');
+            template.querySelector('.remove-btn').disabled = false;
+            container.appendChild(template);
+        }
+
+        // Function to clone and add an education section
+        function addEducation() {
+            const container = document.getElementById('education-container');
+            const template = container.querySelector('.education-item').cloneNode(true);
+            template.removeAttribute('data-original');
+            template.querySelector('.remove-btn').disabled = false;
+            container.appendChild(template);
+        }
+
+        // Function to clone and add a project section
+        function addProject() {
+            const container = document.getElementById('projects-container');
+            const template = container.querySelector('.project-item').cloneNode(true);
+            template.removeAttribute('data-original');
+            template.querySelector('.remove-btn').disabled = false;
+            container.appendChild(template);
+        }
+
+        // Function to remove a section, only if it is not the original
+        function removeSection(button) {
+             const section = button.closest('.achievement-item, .experience-item, .education-item, .project-item');
+             if (!section.hasAttribute('data-original')) {
+                 section.remove(); // Remove the entire cloned section
+            }
+        }
+    </script>
+</body>
+</html>

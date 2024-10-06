@@ -1,50 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume Builder | Landing Page</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/nav.css" />
-  </head>
-  <body>
-    <!-- navbar -->
-    <nav class="navbar">
-      <div class="logo">
-        <!-- <span>Resume Builder</span> -->
-      </div>
-      <ul class="nav-links">
-        <!-- <li><a href="#">Resume Builder App</a></li> -->
-        <li><a href="#">Resume Examples</a></li>
-        <li><a href="#">Resume Templates</a></li>
-        <li><a href="#">Cover Letter Examples</a></li>
-        <li><a href="#">Cover Letter Builder</a></li>
-        <li><a href="#">My Account</a></li>
-      </ul>
-      <div class="build-resume">
-        <a href="login/login.html" class="build-resume-button"
-          >Log in / Sign up</a
-        >
-      </div>
-    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder - FAANG Job Guide</title>
+    <link rel="stylesheet" href="/css/homepage.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
 
-    elliot is a designer
-
-    <!-- hero section -->
-    <div class="hero">
-      <div class="container">
-        <div class="left-side">
-          <h1>Your Dream Job Awaits: Design Your Resume Like a Pro</h1>
-          <p>"Custom Templates and Expert Guidance at Your Fingertips."</p>
-          <div class="get_btn">
-            <button class="">Build My Resume</button>
-          </div>
+    <!-- Navbar Section -->
+    <header>
+        <div class="logo">
+            <h1>Resume Builder</h1>
         </div>
-
-        <div class="right-side">
-          <img src="assets/resume-template/1.svg" alt="Resume Builder" />
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+        </nav>
+        <div class="nav-buttons">
+            <a href="/html/login.html" class="login-btn">Login</a>
+            <a href="#" class="get-started-btn">Get Started</a>
         </div>
-      </div>
-    </div>
-  </body>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <!-- <a href="#" class="b" type="button">Online Resume Builder</a> -->
+            <h2>Mastering the <br> <span class="faang">Faang Job</span>  Hunt:<br> Your Ultimate <br> Guide</h2>
+            <p>Resume Builder: Ace your FAANG dreams. Expert <br> guidance, tailored templates, and insider tips for tech <br> professionals targeting top positions at FAANG <br> companies.</p>
+            <a href="/html/templates/template1.html" class="cta-button">Write my resume now</a>
+        </div>
+        <div class="hero-image">
+            <!-- <img src="images/bg_1.jpg" alt="Resume Preview"> -->
+        </div>
+    </section>
+    <section class="temp">
+        <h2>Pick one of many world-class templates <br> and build your resume in minutes</h2>
+        <div class="container">
+            <div class="slider_c">
+                <button id="prev_slide" class="fa fa-chevron-left"><i class="ri-arrow-left-double-fill"></i></button>
+                <div class="slider_li">
+                    <img src="images\t1.jpeg" alt="img1" class="li_image">
+                    <img src="images\t2.jpeg" alt="img2" class="li_image">
+                    <img src="images\t3.jpeg" alt="img3" class="li_image">
+                    <img src="images\t4.jpeg" alt="img4" class="li_image">
+                    <img src="images\t5.jpeg" alt="img5" class="li_image">
+                    <img src="images\t6.png" alt="img6" class="li_image">
+                    <img src="images\t7.jpeg" alt="img7" class="li_image">
+                    <img src="images\t8.jpeg" alt="img8" class="li_image">
+                    <img src="images\t5.jpeg" alt="img9" class="li_image">
+                    <img src="images\t8.jpeg" alt="img10" class="li_image">
+                </div>
+                <button id="next_slide" class="fa fa-chevron-right">
+                    <i class="ri-arrow-right-double-fill"></i>
+                </button>
+            </div>
+            <div class="slider_scrollbar">
+                <div class="scrollbar_track">
+                    <div class="scrollbar_thumb"></div>
+                </div>
+            </div>
+        </div>
+        <script src="/js/index.js"></script>
+
+    </section>
+
+    <!-- Trusted Companies Section -->
+    <section class="trusted-companies">
+        <h3>Trusted by great companies</h3>
+        <div class="company-logos">
+            <img src="https://via.placeholder.com/150x50?text=The+Guardian" alt="The Guardian">
+            <img src="https://via.placeholder.com/150x50?text=Lifehacker" alt="Lifehacker">
+            <img src="https://via.placeholder.com/150x50?text=Business.com" alt="Business.com">
+            <img src="https://via.placeholder.com/150x50?text=Forbes" alt="Forbes">
+            <img src="https://via.placeholder.com/150x50?text=HuffPost" alt="HuffPost">
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="how-it-works">
+        <h3>How it Works</h3>
+        <p>Our process is simple yet effective.</p>
+    </section>
+
+    <section>
+        
+    </section>
+
+    <footer>
+        <p>Contact us at hello@caliber.design</p>
+    </footer>
+
+</body>
 </html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CV</title>
+    <!-- Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="/css/templates/template2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>   
+</head>
+<body>
+    <!-- Navigation buttons on the left -->
+    <div class="nav">
+        <button id="cmd" class="navbtn" id="downloadBtn" onclick="window.printpdf()"><i class="fas fa-download"></i></button>
+        
+        <form>
+        <input type="hidden" id="custinfo" name="custinfo">
+        <button class="navbtn"><i class="fas fa-save"></i></button>
+        </form>
+        <button class="navbtn" href="#">
+            <a href="#">
+                <i class="fas fa-home"></i></button>
+            </a>
+    </div>
+    <!-- Main container for the CV -->
+    <div class="container" id="container">
+        
+        <!-- Left side of the CV -->
+        <div class="left-side">
+            <!-- Profile section -->
+            <div class="profileText">
+                <div class="imgBox">
+                    <img src="#">
+                </div>
+                <h2 contenteditable="true">VISHAL PARMAR<br><span>Web Developer</span></h2>
+            </div>
+            <!-- Contact information section -->
+            <div class="contactInfo">
+                <h3 class="title">contact Info</h3>
+                <ul>
+                    <!-- Phone number -->
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="text" contenteditable="true">+91 123 4567 890</span>
+                    </li>
+                    <!-- Email -->
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="text" contenteditable="true">visha123@gmail.com</span>
+                    </li>
+                    <!-- Website -->
+                    <li>
+                        <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                        <span class="text" contenteditable="true"   >www.site.com/me</span>
+                    </li>
+                    <!-- LinkedIn -->
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                        <span class="text" contenteditable="true">www.linkdin.com/me</span>
+                    </li>
+                    <!-- Address -->
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text" contenteditable="true">anand, gujarat, india</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Education section -->
+            <div class="contactInfo education">
+                <h3 class="title">education</h3>
+                <ul>
+                    <!-- Education entry 1 -->
+                    <li>
+                        <h5 contenteditable="true">2025-2026</h5>
+                        <h4 contenteditable="true">Bechelor Degree in Computer Eng.</h4>
+                        <h4 contenteditable="true">University name</h4>
+                    </li>
+                    <!-- Education entry 2 -->
+                    <li>
+                        <h5 contenteditable="true">2020-2021</h5>
+                        <h4 contenteditable="true">matriculation</h4>
+                        <h4 contenteditable="true">University name</h4>
+                    </li>
+                </ul>
+            </div>
+            <!-- Languages section -->
+            <div class="contactInfo Languages">
+                <h3 class="title">Languages</h3>
+                <ul>
+                    <!-- Language 1 -->
+                    <li>
+                        <span class="text" contenteditable="true">English</span>
+                        <span class="percent">
+                            <div style="width: 65%;" class="percentBar"></div>
+                        </span>
+                    </li>
+                    <!-- Language 2 -->
+                    <li>
+                        <span class="text" contenteditable="true">Hindi</span>
+                        <span class="percent">
+                            <div style="width: 85%;" class="percentBar"></div>
+                        </span>
+                    </li>
+                    <!-- Language 3 -->
+                    <li>
+                        <span class="text" contenteditable="true">Gujarati</span>
+                        <span class="percent">
+                            <div style="width: 96%;" class="percentBar"></div>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Right side of the CV -->
+        <div class="right-side">
+            <!-- Profile section -->
+            <div class="about">
+                <h2 class="title2">Profile</h2>
+                <p  contenteditable="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nisi a corrupti odio praesentium explicabo molestiae, nihil quos dolor voluptatum cupiditate eaque nesciunt ex, adipisci illum assumenda commodi doloremque excepturi.<br><br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus cupiditate voluptatibus libero incidunt, cum quidem magnam illum, eius corporis, debitis numquam adipisci ipsa veritatis aliquam ad deserunt sed doloremque rem!</p>
+            </div>
+            <!-- Experience section -->
+            <div class="about">
+                <h2 class="title2">Experience</h2>
+                <!-- Experience entry 1 -->
+                <div class="box">
+                    <div class="year_company">
+                        <h5 contenteditable="true">2023 - present</h5>
+                        <h5 contenteditable="true">Company Name</h5>
+                    </div>
+                    <div class="text">
+                        <h4 contenteditable="true">junior UX Designer</h4>
+                        <p contenteditable="true">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse illo assumenda sunt adipisci voluptas ab odio, consequuntur sequi quo velit! Sint odio velit quia est. Architecto sed beatae vitae magnam!</p>
+                    </div>
+                </div>
+                <!-- Experience entry 2 -->
+                <div class="box">
+                    <div class="year_company">
+                        <h5 contenteditable="true">2019 - 2023</h5>
+                        <h5 contenteditable="true">Company Name</h5>
+                    </div>
+                    <div class="text">
+                        <h4 contenteditable="true">Senior UX Designer</h4>
+                        <p contenteditable="true">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse illo assumenda sunt adipisci voluptas ab odio, consequuntur sequi quo velit! Sint odio velit quia est. Architecto sed beatae vitae magnam!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Professional Skills section -->
+            <div class="about skills">
+                <h2 class="title2">Professional Skills</h2>
+                <!-- Skill 1 -->
+                <div class="box">
+                    <h4 contenteditable="true">Html</h4>
+                    <div class="percent">
+                        <div style="width: 90%;" class="percentBar"></div>
+                    </div>
+                </div>
+                <!-- Skill 2 -->
+                <div class="box">
+                    <h4 contenteditable="true">css</h4>
+                    <div class="percent">
+                        <div style="width: 85%;" class="percentBar"></div>
+                    </div>
+                </div>
+                <!-- Skill 3 -->
+                <div class="box">
+                    <h4 contenteditable="true">javascript</h4>
+                    <div class="percent">
+                        <div style="width: 82%;" class="percentBar"></div>
+                    </div>
+                </div>
+                <!-- Skill 4 -->
+                <div class="box">
+                    <h4 contenteditable="true">photoshop</h4>
+                    <div class="percent">
+                        <div style="width: 70%;" class="percentBar"></div>
+                    </div>
+                </div>
+                <!-- Interests section -->
+                <div class="about interest">
+                    <h2 class="title2">Interest</h2>
+                    <ul>
+                        <li contenteditable="true">Gaming</li>
+                        <li contenteditable="true">Reading</li>
+                        <li contenteditable="true">movie watching</li>
+                        <li contenteditable="true">cricket</li>    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Link to JavaScript file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="/js/templates/template2.js"></script>
+</body>
+</html>
